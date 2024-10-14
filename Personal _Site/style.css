@@ -1,71 +1,100 @@
-/* body and html styling */
-html, body{
-    font-family:"Cascadia Code",sans-serif;
-    background-image: url("image.jpg");
-    background-size: cover;
-    background-position: center;
-    margin: 0px;
-    padding:auto;
-    background:color(srgb red green blue);
+/*body styling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden; /* Prevents horizontal scroll issues */
 }
 /* style for main container */
 .container {
-    background-position: center;
-    position: relative;
-    background-size: cover;
-    min-height: 400px;
-    width: 100%;
-   
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  background-image: url("media/portbackground.jpeg");
+  height: 200vh;
+  width: 100%;
 }
 /* Nav styling */
- nav ul {
-    list-style-type:none;
-    margin:0px;
-    padding:0px;
-    font-family:"lato",sans-serif;
-    text-align: center;
-    
+.navbar {
+  list-style: none;
+  margin: auto;
+  padding: 15px 0px;
+  font-family: "Lato", sans-serif;
+  justify-content: space-between;
+  display: flex;
 }
 
-nav ul li{
-    display: inline-block;
-    font-size: 35px;
-    margin: 0px 10px;
+.navbar ul {
+  display: flex;
+  padding: 0px;
+}
+
+.navbar ul li {
+  margin: 0px 18px;
+  list-style: none;
+}
+.navbar ul li a {
+  color: blanchedalmond;
+  text-decoration: none;
+  font-size: 3vw;
+}
+
+.content {
+  top: 10%;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
 }
 /* main section styling */
-main{
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    color:white;
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  width: 80%;
+  margin: 40px auto;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
 }
 /* left column styling*/
 
-.left-col{
-    margin-left:7%;   
+.left-col {
+  margin-left: 7%;
 }
 
-.left-col h2{
-    font-size:30px;
-    color:rgb(222, 196, 255);
-    line-height:80px;
-    float:left;
+.left-col h2 {
+  font-size: 70px;
+  color: rgb(200, 20, 92);
+  line-height: 150px;
+  float: left;
 }
 
 /*header styling*/
-h2{
-    color:fff;
 
+h1 {
+  color: rgb(222, 196, 255);
+  font-size: 80px;
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+  color: rgb(9, 209, 79);
+  font-size: 50px;
+}
+h5{
+    color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 /*footer styling*/
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

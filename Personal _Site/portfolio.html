@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <style>
+      /* General Styling */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-family: "Lato", sans-serif;
+        overflow-x: hidden;
+        background-color: transparent;
+        color: white;
+      }
+
+      .container {
+        background-position: center;
+        background-size: cover;
+        background-image: url("media/portbackground.jpeg");
+        min-height: 100vh;
+        width: 100%;
+      }
+
+      /* Navbar Styling */
+      .navbar {
+        list-style: none;
+        margin: auto;
+        padding: 15px 0px;
+        justify-content: space-between;
+        display: flex;
+      }
+
+      .navbar ul {
+        display: flex;
+        padding: 0;
+      }
+
+      .navbar ul li {
+        margin: 0px 18px;
+        list-style: none;
+      }
+
+      .navbar ul li a {
+        color: blanchedalmond;
+        text-decoration: none;
+        font-size: 2vw;
+        transition: color 0.3s;
+      }
+
+      .navbar ul li a:hover {
+        color: rgb(9, 209, 79);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 4rem;
+        color: rgb(222, 196, 255);
+        margin-top: 20px;
+      }
+
+      /* Portfolio Grid Section */
+      .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 40px;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .project-card {
+        background-color: rgba(233, 229, 229, 0.8);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .project-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .project-info {
+        padding: 15px;
+        text-align: center;
+      }
+
+      .project-info h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+      }
+
+      .project-info p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+
+      .project-info a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(9, 209, 79);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+
+      .project-info a:hover {
+        background-color: rgb(5, 150, 50);
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section class="portfolio">
+        <!-- Project 1 -->
+        <div class="project-card">
+          
+          <div class="project-info">
+            <h3>Zoo Project</h3>
+          
+            <a href="https://github.com/Jayscodezone/fsa-coursework/tree/main/CourseWork/block05/Workshop" target="_blank">View Project </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Grocery List</h3>
+            <a href="https://github.com/Jayscodezone/fsa-coursework/tree/main/CourseWork/block06/guidedPractice/workshop target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Secure the Vault </h3>
+            <a href="https://github.com/Jayscodezone/fsa-coursework/tree/main/block07/workshop3" target="_blank">View Project</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-info">
+            <h3>Picasso's Gallery </h3>
+          
+            <a href="https://github.com/Jayscodezone/fsa-coursework/tree/main/block10/Picasso" target="_blank">View Project</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Created by Janaya Cooper</p>
+    </footer>
+  </body>
+</html>

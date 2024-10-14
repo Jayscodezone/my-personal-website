@@ -1,3 +1,3 @@
-console.log {
-    "Hello World"
-}
+
+// External JS on all pages
+console.log("Hello World");
