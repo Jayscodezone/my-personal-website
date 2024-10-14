@@ -1,0 +1,71 @@
+/* body and html styling */
+html, body{
+    font-family:"Cascadia Code",sans-serif;
+    background-image: url("image.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    padding:auto;
+    background:color(srgb red green blue);
+}
+/* style for main container */
+.container {
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    min-height: 400px;
+    width: 100%;
+   
+}
+/* Nav styling */
+ nav ul {
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+    font-family:"lato",sans-serif;
+    text-align: center;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    font-size: 35px;
+    margin: 0px 10px;
+}
+/* main section styling */
+main{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color:white;
+}
+/* left column styling*/
+
+.left-col{
+    margin-left:7%;   
+}
+
+.left-col h2{
+    font-size:30px;
+    color:rgb(222, 196, 255);
+    line-height:80px;
+    float:left;
+}
+
+/*header styling*/
+h2{
+    color:fff;
+
+}
+/*footer styling*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
