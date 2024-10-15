@@ -121,6 +121,12 @@ p{
     padding: 20px;
 
 }
+
+.profile-pic{
+    height:600px;
+    width:100%;
+    object-fit: cover;
+}
 /*footer styling*/
 footer {
   background-color: #333;
