@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       /* General styling */
       body {
@@ -16,14 +15,15 @@
         width: 100%;
         font-family: "Lato", sans-serif;
         overflow-x: hidden;
+        background-color: transparent;
+        color: white;
       }
 
       .container {
         background-position: center;
-        position: relative;
         background-size: cover;
         background-image: url("media/portbackground.jpeg");
-        height: 200vh;
+        min-height: 100vh;
         width: 100%;
       }
 
@@ -32,7 +32,6 @@
         list-style: none;
         margin: auto;
         padding: 15px 0px;
-        font-family: "Lato", sans-serif;
         justify-content: space-between;
         display: flex;
       }
@@ -50,24 +49,17 @@
       .navbar ul li a {
         color: blanchedalmond;
         text-decoration: none;
-        font-size: 3vw;
+        font-size: 2vw;
+        transition: 0.3s;
       }
-
-      /* Main content styling */
-      main {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 20px;
-        width: 80%;
-        margin: 40px auto;
-        text-align: center;
-        color: white;
-        border-radius: 10px;
+      .navbar ul li a:hover {
+        color: darksalmon;
       }
 
       .profile {
         display: flex;
         align-items: center;
-        margin-bottom: 2em;
+        margin-bottom: 32px;
       }
 
       .profile img {
@@ -79,12 +71,12 @@
 
       /* Refined Skills Section */
       .skills {
-        margin: 2em 0;
+        margin: 32px 0px;
       }
 
       .skills h3 {
-        font-size: 2rem;
-        color: rgb(9, 209, 79);
+        font-size: 32px;
+        color: rgb(107, 5, 197);
         margin-bottom: 1rem;
       }
 
@@ -100,7 +92,7 @@
         padding: 10px;
         border-radius: 8px;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 19px;
         transition: transform 0.3s;
       }
 
@@ -110,7 +102,7 @@
 
       /* Social links */
       .socials {
-        margin-top: 2em;
+        margin-top: 32px;
         text-align: center;
       }
 
@@ -119,14 +111,30 @@
         color: #007bff;
         text-decoration: none;
       }
-
+      /*Heading stylying*/
       h1 {
         color: rgb(222, 196, 255);
-        font-size: 80px;
+        font-size: 64px;
         text-align: center;
         margin-top: 20px;
       }
+      h2 {
+        color: rgb(207, 11, 135);
+        font-size: 32px;
+        margin-bottom: 32px;
+        text-align: center;
+      }
 
+      h3 {
+        color: rgb(226, 220, 231);
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        color: rgb(200, 44, 5);
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
       footer {
         background-color: #333;
         color: white;
@@ -153,11 +161,11 @@
     <div class="container">
       <main>
         <div class="profile">
-          <img src="istockphoto-1683114382-612x612.jpg" alt="Janaya Cooper" />
           <div>
             <h2>Hi, I'm Janaya!</h2>
             <p>
-              I'm mastering HTML, CSS, and JavaScript to become a Full Stack Engineer.
+              I'm mastering HTML, CSS, and JavaScript to become a Full Stack
+              Engineer.
             </p>
           </div>
         </div>
@@ -174,10 +182,12 @@
             <div class="skill-item">Express</div>
           </div>
         </section>
-
+        <br />
         <section class="socials">
           <h3>Connect with Me</h3>
-          <a href="https://www.linkedin.com/in/janaya-cooper/" target="_blank">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/janaya-cooper/" target="_blank"
+            >LinkedIn</a
+          >
           <a href="https://github.com/Jayscodezone" target="_blank">GitHub</a>
           <a href="mailto:jayscodedynasty@gmail.com">Email</a>
         </section>
