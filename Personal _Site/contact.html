@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me Form </title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<style>
+    /* Styling for CSS */
+
+      /* General styling */
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        font-family: "Lato", sans-serif;
+        overflow-x: hidden;
+        background-color: #111;
+        color: white;
+      }
+      
+   /* Responsive Design for tablets */
+   @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /*  Responsive Design For phones */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+    }
+  }
+   /* Container styling */
+      .container {
+        background-position: center;
+        background-size: cover;
+        background-image: url("media/portbackground.jpeg");
+        min-height: 100vh;
+        width: 100%;
+        display:flex;
+      }
+
+      /* Navbar styling */
+      .navbar {
+        list-style: none;
+        margin: auto;
+        padding: 15px 0px;
+        justify-content: space-between;
+        display: flex;
+      }
+
+      .navbar ul {
+        display: flex;
+        padding: 0px;
+      }
+
+      .navbar ul li {
+        margin: 0px 18px;
+        list-style: none;
+      }
+
+      .navbar ul li a {
+        color: blanchedalmond;
+        text-decoration: none;
+        font-size: 2vw;
+        transition: 0.3s ease-in-out;
+      }
+      .navbar ul li a:hover {
+        color: darksalmon;
+      }
+</style>
+<body>
+    <h1>Contact Me</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+    <form action ="action_page.php" target=""_blank" method= "GET">
+    <label for ="fname"> First Name </label><br>
+    <input type ="text" id ="fname" name="fname"><br>
+    <label for ="lname"> Last Name </label><br>
+    <input type ="text" id ="lname" name="lname"><br>
+    <label for ="email"> Email </label><br>
+    <input type ="text" id ="email" name="email"><br>
+    <input type ="submit" value ="Submit">
+    </form>
+</body>
+</html>
