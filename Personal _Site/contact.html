@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me Form </title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src ="script.js"></script>
 </head>
 <style>
     /* Styling for CSS */
@@ -78,6 +78,10 @@
       .navbar ul li a:hover {
         color: darksalmon;
       }
+
+      
+    </style>
+
 </style>
 <body>
     <h1>Contact Me</h1>
@@ -90,7 +94,7 @@
       </ul>
     </nav>
   </header>
-    <form action ="action_page.php" target=""_blank" method= "GET">
+    <form  id = "form" action ="./success.html" target="_blank">
     <label for ="fname"> First Name </label><br>
     <input type ="text" id ="fname" name="fname"><br>
     <label for ="lname"> Last Name </label><br>
@@ -99,7 +103,8 @@
     <input type ="text" id ="email" name="email"><br>
     <label for ="message"> Message</label><br>
     <textarea id ="message" name="message" rows="4" cols="50"></textarea><br>
-    <input type ="submit" value ="Submit">
+    <!--<button id = "submit" type ="submit" value ="Submit"> Submit</button>-->
+    <input type="submit">
     </form>
 </body>
 </html>
