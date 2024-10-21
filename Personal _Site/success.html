@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me Form </title>
+    <title>Success Message</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
 </head>
@@ -38,10 +38,6 @@
   }
    /* Container styling */
       .container {
-        display: flex;
-       flex-direction: column;
-       justify-content:space-between;
-       align-items:center;
         background-position: center;
         background-size: cover;
         background-image: url("media/portbackground.jpeg");
@@ -90,16 +86,12 @@
       </ul>
     </nav>
   </header>
-    <form action ="action_page.php" target=""_blank" method= "GET">
-    <label for ="fname"> First Name </label><br>
-    <input type ="text" id ="fname" name="fname"><br>
-    <label for ="lname"> Last Name </label><br>
-    <input type ="text" id ="lname" name="lname"><br>
-    <label for ="email"> Email </label><br>
-    <input type ="text" id ="email" name="email"><br>
-    <label for ="message"> Message</label><br>
-    <textarea id ="message" name="message" rows="4" cols="50"></textarea><br>
-    <input type ="submit" value ="Submit">
-    </form>
+
+</style>
+<body>
+
+    <h1> Thank you for Reaching out! </h1>
+    <p> I have received your message and will get back to you shortly. </p>
+    <script src="success.js"></script>
 </body>
 </html>

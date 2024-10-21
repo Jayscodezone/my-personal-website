@@ -25,6 +25,10 @@ body {
 }
 /* style for main container */
 .container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:center;
   background-position: center;
   background-size: cover;
   background-image: url("media/portbackground.jpeg");
